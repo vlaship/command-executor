@@ -1,4 +1,4 @@
-package command.executer;
+package command.executer.cmd;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,6 @@ public final class CountCmd implements Command {
 
     private static final Map<Class<? extends Command>, Integer> map = new HashMap<>();
     private static final CountCmd INSTANCE = new CountCmd();
-
 
     @Override
     public String execute() {

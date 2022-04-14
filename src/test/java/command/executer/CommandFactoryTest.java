@@ -1,5 +1,8 @@
 package command.executer;
 
+import command.executer.cmd.PingCmd;
+import command.executer.cmd.TimeCmd;
+import command.executer.cmd.VersionCmd;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
