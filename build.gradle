@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'command.executer'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    lombokVersion = '1.18.22'
+    junitVersion= '5.8.2'
+}
+
+dependencies {
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+}
+
+test {
+    useJUnitPlatform()
+}
